@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--三个输入框  一个按钮-->
+    <EditText
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="input name"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="input age"
+        />
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="input phone"/>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击按钮就能跳转到页面2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+<!--页面一（输入页面）： 一个输入框，输入姓名 一个输入框，输入年龄  一个输入框，输入手机号  一个按钮"提交"
+
+    页面二（确认页面）：显示刚才输入的所有信息 一个按钮"确认无误"  一个按钮"返回修改"
+页面三（完成页面）：显示"注册成功" 一个按钮"返回首页"-->
+
+
+</LinearLayout>
