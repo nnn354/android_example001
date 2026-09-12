@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+<!--登录需要输入手机号和密码 验证比对  成功就跳页面2 失败就弹窗toast
+页面一（注册页）
+  输入：name / age / phone / username / passwd
+  按钮1：注册 → 存进SharedPreferences → 跳到页面三（登录页）
+  按钮2：去登录 → 直接跳到页面三
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+页面三（登录页）
+  输入：phone / passwd
+  按钮1：登录 → 对比SharedPreferences → 成功跳页面二，失败弹Toast
+  即从页面3的输入框获取，和之前存的数据进行比较  比较后成功或者失败，做反应
+  按钮2：去注册 → 返回页面一
+
+页面二（主页）
+  显示：欢迎，xxx（从SharedPreferences取username）
+   并且显示用户所有信息
+  -->
+    <EditText
+        android:id="@+id/logphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input username to login"
+        />
+    <EditText
+        android:id="@+id/logpasswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input passwd to log in"
+        />
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击以提交信息和去登录"
+        />
+</LinearLayout>

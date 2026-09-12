@@ -4,6 +4,7 @@
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -25,19 +26,36 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="input phone"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="input username  to  sign up" />
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="input passwd to sign up"/>
 
     <Button
-        android:id="@+id/btnsubmit"
+        android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="点击按钮就能跳转到页面2"
+        android:text="点击按钮来提交信息注册"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:text="点击按钮去登录" />
 
-<!--页面一（输入页面）： 一个输入框，输入姓名 一个输入框，输入年龄  一个输入框，输入手机号  一个按钮"提交"
 
-    页面二（确认页面）：显示刚才输入的所有信息 一个按钮"确认无误"  一个按钮"返回修改"
-页面三（完成页面）：显示"注册成功" 一个按钮"返回首页"-->
+
+
+
 
 
 </LinearLayout>
